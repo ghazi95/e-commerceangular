@@ -1,0 +1,45 @@
+
+<h2>Ajouter un atricle</h2>
+
+<div class="mobile-form"></div>
+
+<div class="mb-3">
+    <label for="reference" class="form-label">Référence</label>
+    <input type="text" class="form-control" id="reference" name="reference" [(ngModel)]="produit.reference" placeholder="Référence">
+</div>
+ 
+<div class="mb-3">
+    <label for="designation" class="form-label">Désignation</label>
+    <input type="text" class="form-control" id="designation" name="designation" [(ngModel)]="produit.designation" placeholder="Désignation">
+</div>
+
+<div class="mb-3">
+    <label for="prix" class="form-label">Prix</label>
+    <input type="text" class="form-control" id="Prix" name="prix" [(ngModel)]="produit.prix" placeholder="Prix">
+</div>
+
+<div class="mb-3">
+    <label for="marque" class="form-label">Marque</label>
+    <input type="text" class="form-control" id="marque" name="marque" [(ngModel)]="produit.marque" placeholder="Marque">
+</div>
+
+<div class="mb-3">
+    <label for="qtstock" class="form-label">Quantité</label>
+    <input type="text" class="form-control" id="qtstock" name="qtestock" [(ngModel)]="produit.qtestock" placeholder="Quantité">
+</div>
+
+<div class="mb-3">
+    <label for="scategorie" class="form-label">Sous catégorie</label>
+    <input type="text" class="form-control" id="scategorie" name="scategorie" [(ngModel)]="produit.scategorieID" placeholder="sous catégorie">
+</div>
+
+<div class="mb-3">
+    <label for="image" class="form-label">Image</label>
+    <input type="text" class="form-control" id="imageart" name="image" [(ngModel)]="produit.imageart" placeholder="Image">
+</div>
+
+<div>
+    <button type="button" class="btn btn-success" (click)="sauvegarder()" [routerLink]="['/products']">Enregistrer</button>
+
+    <button type="button" class="btn btn-info">Annuler</button>
+</div>
